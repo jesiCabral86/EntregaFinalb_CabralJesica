@@ -1,0 +1,124 @@
+/*GENERAL*/
+li{list-style-type: none; 
+    padding: 10px;
+    margin: 10px;   
+}
+.encabezado{
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: bahnschrift;
+}
+ul{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+footer{
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+    font-family: bahnschrift;
+}
+/*DESKTOP*/
+@media (min-width:1024px){
+.gridIndex{display: grid;
+    grid-template-areas: "header main footer";
+    grid-template-columns: 100%;
+    grid-template-rows: "auto auto auto";
+}
+header{grid-area: header;}
+main{grid-area: main;}
+footer{grid-area: footer;}
+.gridMainIndex{
+    display: grid;
+    grid-template-areas: "img0 img0 img0"
+         "titulo titulo titulo"
+         "txt1 imgT txt2";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);  
+    }
+.img0{grid-area: img0;}
+.titulo{grid-area: titulo;}
+.txt1{grid-area: txt1;}
+.imgT{grid-area: imgT;}
+.txt2{grid-area: txt2;}
+.titulo{display: flex; 
+     flex-direction: row;
+     justify-content: space-around;  
+    background-color: lightblue;
+}
+img{margin: 20px;}
+/*Proyectos*/
+.gridMainProyectos{
+    display: grid;
+     grid-template-areas: "tituloproy tituloproy tituloproy" "tit1 tit2 tit3" "proy1 proy2 proy3";
+     grid-template-columns: 33% 34% 33%;
+    grid-template-rows: repeat(3,auto);
+}
+.tituloproy{grid-area: tituloproy;}
+.tit1{grid-area: tit1;}
+.tit2{grid-area: tit2;}
+.tit3{grid-area: tit3;}
+.proy1{grid-area: proy1;}
+.proy2{grid-area: proy2;}
+.proy3{grid-area: proy3;}
+.tituloproy{text-align: center; background-color: lightblue; margin-top: 10px;}
+.proy{background-color: lightblue; padding: 5px; margin: 10px; border-radius: 20px;}
+h3{text-align: center;}
+img{border-radius: 15px; justify-content: center;
+}
+/*Nosotros*/
+.gridMainNosotros{
+    display: grid;
+    grid-template-areas: "tituloNos tituloNos tituloNos" "tit1 tit2 tit3" "arq1 arq2 arq3";
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: repeat(3,auto);
+}
+.tituloNos{grid-area: tituloNos;}
+.tit1{grid-area: tit1;}
+.tit2{grid-area: tit2;}
+.tit3{grid-area: tit3;}
+.arq1{grid-area: arq1;}
+.arq2{grid-area: arq2;}
+.arq3{grid-area: arq3;}
+.tituloNos{text-align: center; background-color: lightblue; margin-top: 10px;}
+/*Contacto*/
+.gridMainContacto{
+    display: grid;
+    grid-template-areas: "tituloCon tituloCon tituloCon" "tit1 tit2 tit3" "con1 con2 con3";
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: repeat(3,auto);
+}
+.tituloCon{grid-area: tituloCon;}
+.tit1{grid-area: tit1;}
+.tit2{grid-area: tit2;}
+.tit3{grid-area: tit3;}
+.con1{grid-area: con1;}
+.con2{grid-area: con2;}
+.con3{grid-area: con3;}
+.tituloCon{text-align: center; background-color: lightblue; margin-top: 10px;}
+}
+/*Mobile*/
+@media (max-width:768px){
+body{background-color: lightgray;}
+header, main, footer {display: flex;
+                flex-direction:column;
+                align-items: center;}
+ul{display: flex; padding: 0%;}
+a{color:black; font-size: 22px; padding: 5px; margin: 5px;}
+p{font-size: 15px;
+padding: 10px;}
+}
