@@ -1,0 +1,29 @@
+li{list-style-type: none; 
+    padding: 10px;
+    margin: 10px;   
+    }
+.encabezado{
+    background-image: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: bahnschrift;
+     }
+ul{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+  }
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+p{
+    padding: 10px;
+    font-size: 15px;
+}

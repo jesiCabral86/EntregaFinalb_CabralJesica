@@ -1,0 +1,13 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+    font-family: bahnschrift;
+}
+@media (max-width:768px){
+          footer{flex-direction:column;
+          justify-content:center;
+          align-items:center;
+            }
+        }
