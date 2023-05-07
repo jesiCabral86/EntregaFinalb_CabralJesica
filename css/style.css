@@ -49,6 +49,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     background-color: lightblue;
+    margin-top: 10px;
   }
   /*Proyectos*/
   .gridMainProyectos {
@@ -85,7 +86,7 @@ footer {
   }
   .proy {
     background-color: lightblue;
-    padding: 5px;
+    padding: 10px;
     margin: 10px;
     border-radius: 20px;
   }
@@ -173,29 +174,27 @@ footer {
     padding: 5px;
     margin: 5px;
   }
-  body {
-    background-color: lightgray;
-  }
-  body ul {
-    display: flex;
-    padding: 0%;
-  }
-  body ul main {
+  .main {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  body ul main a {
+  .main ul {
+    display: flex;
+    padding: 0%;
+  }
+  .main ul a {
     color: black;
     font-size: 22px;
     padding: 5px;
     margin: 5px;
   }
-  body ul main a p {
+  .main ul a p {
     font-size: 15px;
     padding: 10px;
   }
-  body ul main a p h1 {
+  .main ul a p h1 {
+    background-color: lightblue;
     justify-content: center;
   }
 }
