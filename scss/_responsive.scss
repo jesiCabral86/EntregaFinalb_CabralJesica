@@ -24,8 +24,9 @@
     .titulo{display: flex; 
          flex-direction: row;
          justify-content: space-around;  
-        background-color: lightblue;
+        background-color:lightgray;
         margin-top: 10px;
+        font-family: bahnschrift;
     }
     /*Proyectos*/
     .gridMainProyectos{
@@ -41,12 +42,19 @@
     .proy1{grid-area: proy1;}
     .proy2{grid-area: proy2;}
     .proy3{grid-area: proy3;}
-    .tituloproy{text-align: center; background-color: lightblue; margin-top: 10px;}
+    .tituloproy{text-align: center; 
+                background-color:lightgrey; 
+                margin-top: 10px;
+                padding: 10px;
+                font-family: bahnschrift;
+            }
     .proy{background-color: lightblue; 
           margin: 5px; 
-          border-radius: 20px;}
-    h2{text-align: center;
-        justify-content: center;}
+          border-radius: 20px;
+        }
+    p{
+      padding: 10px;
+    }
     /*Nosotros*/
     .gridMainNosotros{
         display: grid;
@@ -61,7 +69,10 @@
     .arq1{grid-area: arq1;}
     .arq2{grid-area: arq2;}
     .arq3{grid-area: arq3;}
-    .tituloNos{text-align: center; background-color: lightblue; margin-top: 10px;}
+    .tituloNos{text-align: center; 
+        font-family: bahnschrift; 
+        background-color:lightgray; 
+        padding: 10px;}
     /*Contacto*/
     .gridMainContacto{
         display: grid;
@@ -94,13 +105,27 @@ header,footer{display: flex;
             a{color:black; font-size: 22px;
               padding: 5px; 
               margin: 5px;
-                p{font-size: 15px; padding: 10px;
+                p{padding: 10px;
                          h1{background-color: lightblue;
-                            justify-content: center;
+                            align-items: center;
+                            padding: 10px;
                          } 
                 }
             } 
         }
     }
-                               
+}
+.tituloproy{text-align: center; 
+    background-color:lightgrey; 
+    margin-top: 10px;
+    padding: 10px;
+    font-family: bahnschrift;
+}
+.tituloNos{text-align: center; 
+    font-family: bahnschrift; 
+    background-color:lightgray; 
+    padding: 10px;
+}
+h2{
+    justify-content: center;
 }

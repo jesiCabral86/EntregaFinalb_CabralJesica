@@ -48,8 +48,9 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: lightblue;
+    background-color: lightgray;
     margin-top: 10px;
+    font-family: bahnschrift;
   }
   /*Proyectos*/
   .gridMainProyectos {
@@ -81,17 +82,18 @@ footer {
   }
   .tituloproy {
     text-align: center;
-    background-color: lightblue;
+    background-color: lightgrey;
     margin-top: 10px;
+    padding: 10px;
+    font-family: bahnschrift;
   }
   .proy {
     background-color: lightblue;
-    padding: 10px;
-    margin: 10px;
+    margin: 5px;
     border-radius: 20px;
   }
-  h3 {
-    text-align: center;
+  p {
+    padding: 10px;
   }
   /*Nosotros*/
   .gridMainNosotros {
@@ -123,8 +125,9 @@ footer {
   }
   .tituloNos {
     text-align: center;
-    background-color: lightblue;
-    margin-top: 10px;
+    font-family: bahnschrift;
+    background-color: lightgray;
+    padding: 10px;
   }
   /*Contacto*/
   .gridMainContacto {
@@ -190,14 +193,33 @@ footer {
     margin: 5px;
   }
   .main ul a p {
-    font-size: 15px;
     padding: 10px;
   }
   .main ul a p h1 {
     background-color: lightblue;
-    justify-content: center;
+    align-items: center;
+    padding: 10px;
   }
 }
+.tituloproy {
+  text-align: center;
+  background-color: lightgrey;
+  margin-top: 10px;
+  padding: 10px;
+  font-family: bahnschrift;
+}
+
+.tituloNos {
+  text-align: center;
+  font-family: bahnschrift;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+h2 {
+  justify-content: center;
+}
+
 li {
   list-style-type: none;
   padding: 10px;
@@ -229,11 +251,6 @@ header {
   justify-content: center;
 }
 
-p {
-  padding: 10px;
-  font-size: 15px;
-}
-
 footer {
   display: flex;
   flex-direction: row;
@@ -252,6 +269,7 @@ footer {
 .img-fluida {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 .imgT {
