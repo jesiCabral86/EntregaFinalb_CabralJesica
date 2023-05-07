@@ -12,7 +12,10 @@ a{
     text-decoration: none;
     font-size: 20px;
     font-family: bahnschrift;
+     &a:hover{
+        background:#78788c;color:#fff;cursor:pointer;transition:all .3s
      }
+}
 ul{
     display: flex;
     flex-direction:row;
@@ -23,3 +26,6 @@ header{
     flex-direction: row;
     justify-content: center;
  }
+h3{
+    padding: 10px;
+}

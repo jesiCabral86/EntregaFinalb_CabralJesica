@@ -28,6 +28,9 @@
         margin-top: 10px;
         font-family: bahnschrift;
     }
+    p{
+       padding: 10px;
+    }
     /*Proyectos*/
     .gridMainProyectos{
         display: grid;
@@ -45,14 +48,14 @@
     .tituloproy{text-align: center; 
                 background-color:lightgrey; 
                 margin-top: 10px;
-                padding: 10px;
+                padding: 5px;
                 font-family: bahnschrift;
             }
     .proy{background-color: lightblue; 
           margin: 5px; 
           border-radius: 20px;
         }
-    p{
+    h2{
       padding: 10px;
     }
     /*Nosotros*/
@@ -76,19 +79,31 @@
     /*Contacto*/
     .gridMainContacto{
         display: grid;
-        grid-template-areas: "tituloCon tituloCon tituloCon" "tit1 tit2 tit3" "con1 con2 con3";
-        grid-template-columns: 33% 34% 33%;
-        grid-template-rows: repeat(3,auto);
+        grid-template-areas: "tituloCon tituloCon" "tit1 tit2" "lista mapa";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(2,auto);
     }
     .tituloCon{grid-area: tituloCon;}
     .tit1{grid-area: tit1;}
     .tit2{grid-area: tit2;}
-    .tit3{grid-area: tit3;}
-    .con1{grid-area: con1;}
-    .con2{grid-area: con2;}
-    .con3{grid-area: con3;}
-    .tituloCon{text-align: center; background-color: lightblue; margin-top: 10px;}
-    }
+    .lista{grid-area: lista;}
+    .mapa{grid-area: mapa;}
+    .tituloCon{text-align: center; background-color: lightblue; margin-top: 10px; font-family: bahnschrift;}
+.lista{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    margin: 20px;
+    padding: 20px;
+ }
+button{float:right;padding:8px 12px;margin:8px 0 0;font-family:'Montserrat',sans-serif;border:2px solid #78788c;background:0;color:#5a5a6e;cursor:pointer;transition:all .3s}
+button:hover{background:#78788c;color:#fff}
+.mapa{
+    margin: 20px;
+}
+}
 /*Mobile*/
 @media (max-width:768px){
 header,footer{display: flex;
@@ -115,17 +130,14 @@ header,footer{display: flex;
         }
     }
 }
-.tituloproy{text-align: center; 
-    background-color:lightgrey; 
+.tituloproy, .tituloNos{text-align: center; 
+    background-color:lightblue; 
     margin-top: 10px;
     padding: 10px;
     font-family: bahnschrift;
 }
-.tituloNos{text-align: center; 
-    font-family: bahnschrift; 
-    background-color:lightgray; 
-    padding: 10px;
-}
 h2{
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

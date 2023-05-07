@@ -52,6 +52,9 @@ footer {
     margin-top: 10px;
     font-family: bahnschrift;
   }
+  p {
+    padding: 10px;
+  }
   /*Proyectos*/
   .gridMainProyectos {
     display: grid;
@@ -84,7 +87,7 @@ footer {
     text-align: center;
     background-color: lightgrey;
     margin-top: 10px;
-    padding: 10px;
+    padding: 5px;
     font-family: bahnschrift;
   }
   .proy {
@@ -92,7 +95,7 @@ footer {
     margin: 5px;
     border-radius: 20px;
   }
-  p {
+  h2 {
     padding: 10px;
   }
   /*Nosotros*/
@@ -132,9 +135,9 @@ footer {
   /*Contacto*/
   .gridMainContacto {
     display: grid;
-    grid-template-areas: "tituloCon tituloCon tituloCon" "tit1 tit2 tit3" "con1 con2 con3";
-    grid-template-columns: 33% 34% 33%;
-    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "tituloCon tituloCon" "tit1 tit2" "lista mapa";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, auto);
   }
   .tituloCon {
     grid-area: tituloCon;
@@ -145,22 +148,44 @@ footer {
   .tit2 {
     grid-area: tit2;
   }
-  .tit3 {
-    grid-area: tit3;
+  .lista {
+    grid-area: lista;
   }
-  .con1 {
-    grid-area: con1;
-  }
-  .con2 {
-    grid-area: con2;
-  }
-  .con3 {
-    grid-area: con3;
+  .mapa {
+    grid-area: mapa;
   }
   .tituloCon {
     text-align: center;
     background-color: lightblue;
     margin-top: 10px;
+    font-family: bahnschrift;
+  }
+  .lista {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    margin: 20px;
+    padding: 20px;
+  }
+  button {
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid #78788c;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  button:hover {
+    background: #78788c;
+    color: #fff;
+  }
+  .mapa {
+    margin: 20px;
   }
 }
 /*Mobile*/
@@ -201,23 +226,18 @@ footer {
     padding: 10px;
   }
 }
-.tituloproy {
+.tituloproy, .tituloNos {
   text-align: center;
-  background-color: lightgrey;
+  background-color: lightblue;
   margin-top: 10px;
   padding: 10px;
   font-family: bahnschrift;
 }
 
-.tituloNos {
-  text-align: center;
-  font-family: bahnschrift;
-  background-color: lightgray;
-  padding: 10px;
-}
-
 h2 {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 li {
@@ -238,6 +258,12 @@ a {
   font-size: 20px;
   font-family: bahnschrift;
 }
+aa:hover {
+  background: #78788c;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
 
 ul {
   display: flex;
@@ -249,6 +275,10 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+h3 {
+  padding: 10px;
 }
 
 footer {
@@ -269,7 +299,7 @@ footer {
 .img-fluida {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .imgT {
