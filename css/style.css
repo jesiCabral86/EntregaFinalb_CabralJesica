@@ -55,6 +55,9 @@ footer {
   p {
     padding: 10px;
   }
+  .logorrss {
+    padding: 20px;
+  }
   /*Proyectos*/
   .gridMainProyectos {
     display: grid;
@@ -226,7 +229,7 @@ footer {
     padding: 10px;
   }
 }
-.tituloproy, .tituloNos {
+.tituloproy, .tituloNos, .tituloCon {
   text-align: center;
   background-color: lightblue;
   margin-top: 10px;
@@ -238,6 +241,10 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.mapa {
+  overflow: hidden;
 }
 
 li {

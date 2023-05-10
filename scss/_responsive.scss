@@ -31,6 +31,9 @@
     p{
        padding: 10px;
     }
+    .logorrss{
+        padding: 20px;
+    }
     /*Proyectos*/
     .gridMainProyectos{
         display: grid;
@@ -130,7 +133,7 @@ header,footer{display: flex;
         }
     }
 }
-.tituloproy, .tituloNos{text-align: center; 
+.tituloproy, .tituloNos, .tituloCon{text-align: center; 
     background-color:lightblue; 
     margin-top: 10px;
     padding: 10px;
@@ -140,4 +143,7 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.mapa{
+    overflow: hidden;
 }
