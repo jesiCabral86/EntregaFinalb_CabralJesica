@@ -55,9 +55,6 @@ footer {
   p {
     padding: 10px;
   }
-  .logorrss {
-    padding: 20px;
-  }
   /*Proyectos*/
   .gridMainProyectos {
     display: grid;
@@ -245,6 +242,10 @@ h2 {
 
 .mapa {
   overflow: hidden;
+}
+
+.lista {
+  text-align: center;
 }
 
 li {
